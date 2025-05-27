@@ -9,22 +9,18 @@ class LifecycleDemo extends React.Component {
     console.log("Gọi hàm constructor");
   }
 
-  static getDerivedStateFromProps(props, state) {
-    console.log("Gọi hàm getDerivedStateFromProps");
-    return null;
+  shouldComponentUpdate(nextProps, nextState) {
+    //Chỉ render khi count chẵn
+    console.log("Gọi hàm shouldComponentUpdate", nextProps, nextState);
+    return nextState.count % 2 === 0;
   }
 
   componentDidMount() {
     console.log("Gọi hàm componentDidMount");
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log("Gọi hàm shouldComponentUpdate");
-    return true;
-  }
-
   componentDidUpdate(prevProps, prevState) {
-    console.log("Gọi hàm componentDidUpdate");
+    console.log("Gọi hàm componentDidUpdate: ", prevProps, " : ", prevState);
   }
 
   componentWillUnmount() {
@@ -36,7 +32,7 @@ class LifecycleDemo extends React.Component {
   };
 
   render() {
-    console.log("Gọi hàm  render");
+    console.log("Gọi hàm render");
     return (
       <div className="lifecycle-container">
         <h2>React Lifecycle Demo - Task 3</h2>
