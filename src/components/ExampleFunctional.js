@@ -6,8 +6,17 @@ export default function ExampleFunctional() {
 
   useEffect(() => {
     document.title = `You clicked ${count} times`;
-    console.log('useEffect');
-  }, [count]);
+    console.log('Gọi hàm useEffect');
+
+    const interval = setInterval(() => {
+      console.log(`Interval: Count is ${count}, Action is ${action}`);
+    }, 1000);
+
+    return () => {
+      console.log('Clear interval');
+      clearInterval(interval);
+    };
+  }, [count, action]);
 
   return (
     <div className="example-functional">
