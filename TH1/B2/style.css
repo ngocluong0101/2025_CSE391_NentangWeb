@@ -1,0 +1,33 @@
+h1 {
+  border-left: solid 5px;
+  color: rgb(160, 27, 30);
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: 13px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.body {
+  width: 30%;
+  margin: auto;
+}
+
+.items {
+  padding-left: 25px;
+}
+
+img {
+  width: 100%;
+}
+
+i {
+  color: red;
+  margin-right: 10px;
+}

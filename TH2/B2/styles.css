@@ -1,0 +1,121 @@
+/* body {
+  background-image: url(../assets/extra-files/ocean.jpg);
+  background-size: cover;
+  background-position: top;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 1px; */
+  align-items: center;
+  padding: 20px 10%; 
+  background-image: url(../assets/extra-files/ocean.jpg);
+  background-size: cover;
+}
+
+#page-logo a {
+  font-family: "Oleo Script", cursive;
+  font-size: 2rem;
+  color: #fff84f;
+  text-shadow: 1px 1px #000;
+}
+
+nav ul {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+#hero {
+  /* border: solid 1px; */
+  background-image: url(../assets/extra-files/ocean.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-content {
+  background-color: rgb(64, 73, 72);
+  color: white;
+  padding-bottom: 20px;
+  margin: 20px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#hero-content a {
+  border: solid 1px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: yellow;
+  color: black;
+}
+
+#highlights {
+  /* border: solid 1px; */
+  background-color: rgb(226, 253, 254);
+  text-align: center;
+}
+
+#destinations {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  list-style: none;
+}
+
+.destination {
+  width: 30%;
+}
+
+.destination img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.destination p {
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.destination strong {
+  color: teal;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
